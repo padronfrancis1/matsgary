@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matsgary - Home</title>
+
+    <!-- <link rel="shortcut icon" href="assets/img/xicon.jpg" type="image/x-icon"> -->
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+
+
+
+
+    <link rel="stylesheet" href="assets/angular-material/angular-material.min.css">
+
+    <script src="assets/angular/angular.min.js"></script>
+
+    <script src="assets/angular-animate/angular-animate.js"></script>
+
+    <script src="assets/angular-aria/angular-aria.min.js"></script>
+
+    <script src="assets/angular-material/angular-material.min.js"></script>
+
+
+
+    <script>
+
+      angular.module('MyApp',['ngMaterial'])
+
+        .run(function(){
+
+          console.log('My App is ready');
+
+        })
+
+    </script>
+
+
+
+
+
+
+
+    <!-- Owl Carousel Assets -->
+
+    <!-- <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
+
+
+
+    <!-- Prettify -->
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+
+
+    <!--magnific-->
+
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+
+
+
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    
+
+    <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
+    <link rel="stylesheet" href="assets/css/pictures.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+
+
+
+
+
+
+    
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
+    
+
+</head>
+
+
+
+<body ng-app="MyApp" style="padding: 0px 0px;">
+
+
+
+
+
+
+
+
+
+  <div id="main" style="width:100%; margin:0 auto;padding-right:0px;"> <!-- untill bottom -->
+
+
+
+    <%- include partials/nav.ejs %>
+
+    <%- include partials/carousel.ejs %>
+
+    
+
+
+
+
+
+    <!-- <% include ./partials/carousel %> -->
+
+
+
+
+
+    <!-- <section class="content content-container">
+
+      <div class="row" style="padding-right:0px; width:100%; margin:0 auto; background: #333;">
+
+
+
+        <div id="discipline" class="col-sm-4" style="padding:0px 0px; background: transparent;" data-toggle="modal" data-target="#discipline_target">
+
+          <img src="assets/img/discipline.jpg" style="width:100%;">
+
+           <button type="button" class="btn btn-primary btn-sm" style="width:100%;">Read More...</button>
+
+        </div>
+
+        <div id="punctuality" class="col-sm-4" style="padding:0px 0px;background: #333;" data-toggle="modal" data-target="#punctuality_target">
+
+          <img src="assets/img/12.jpg" style="width:100%;">
+
+          <button type="button" class="btn btn-primary btn-sm" style="width:100%;">Read More...</button>
+
+        </div>
+
+        <div id="sportsmanship" class="col-sm-4" style="padding:0px 0px; background: #333;" data-toggle="modal" data-target="#sportsmanship_target">
+
+          <img src="assets/img/11.jpg" style="width:100%;">
+
+          <button type="button" class="btn btn-primary btn-sm" style="width:100%;">Read More...</button>
+
+        </div>
+
+
+
+      </div>
+
+    </section> -->
+
+
+
+
+
+    <!-- modal sections -->
+
+
+
+    
+
+    <%- include partials/modals.ejs %>
+
+    <!-- modal sections end -->
+
+
+
+    <section>
+
+      <div class="news container-fluid" style="margin-top:10px;">
+
+        <div class="row">
+
+
+
+          <div class="col-lg-12">
+
+            <h1 class="page-header"></h1>
+
+            <h1>NEWS</h1>
+
+          </div>
+
+
+
+          <div class="col-md-12 news_bg">
+
+            
+
+            <div class="row">
+
+            <div id="latest-news" class="col-md-4" style="padding:10px 20px; background: transparent;" >
+
+              <img src="assets/img/Boston-Pizza.jpg" style="width:100%;">
+              
+
+               <!-- <button type="button" class="btn btn-primary btn-sm" style="width:100%;" data-toggle="modal" data-target="#programs_traininghard">Read More...</button> -->
+
+            </div>
+
+
+
+              <div id="news1" class="col-md-4" style="padding:10px 20px; background: transparent;" >
+
+                <img src="assets/img/news1.jpg" style="width:100%;">
+
+                 <!-- <button type="button" class="btn btn-primary btn-sm" style="width:100%;" data-toggle="modal" data-target="#programs_parternsinfo">Read More...</button> -->
+
+              </div>
+
+
+
+           
+
+
+
+              <div id="news2" class="col-md-4" style="padding:10px 20px; background: transparent;" >
+
+                <img src="assets/img/news2.jpg" style="width:100%;">
+
+                 <!-- <button type="button" class="btn btn-primary btn-sm" style="width:100%;" data-toggle="modal" data-target="#programs_traininghard">Read More...</button> -->
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </div> 
+
+
+
+            <br>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <hr>
+
+
+
+      <div class="sponsors container-fluid">
+
+        <div class="row">
+
+
+
+          <div class="col-lg-12">
+
+            <h1 class="page-header"></h1>
+
+            <h1>MatsGary Partners and Sponsors</h1>
+
+            
+
+          </div>
+
+
+
+          <div class="col-md-12 sponsors_bg container-fluid" style="background: transparent;margin: 0 auto;">
+
+
+
+            <div class="col-sm-12 col-md-3 col-lg-3 sponsors-image container-fluid">
+
+              <img src="assets/img/td.png" class="img-responsive"/>
+
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-3 col-lg-3 sponsors-image container-fluid">
+
+              <img src="assets/img/jumpstartlogo.png" class="img-responsive" alt="jumpstart" />
+
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-3 col-lg-3 sponsors-image container-fluid">
+
+              <img src="assets/img/kidsport.png" class="img-responsive" alt="kidsport" />
+
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 sponsors-image container-fluid">
+
+              <img src="assets/img/Boston-Pizza.png" class="img-responsive" alt="boston pizza" />
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+      <hr>
+
+
+
+
+
+
+
+
+
+      <div class="gallery container-fluid">
+
+
+
+          <div class="row">
+
+
+
+              <div class="col-lg-12">
+
+                <h1 class="page-header"></h1>
+
+                <h1> OUR PHOTO GALLERY</h1>
+
+              </div>
+
+
+
+              <div class="container-fluid">
+
+
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+
+
+                    <h1>Matsgarys competes in Edmonton!</h1>
+
+                    <h1>(August 2016 - Fuhr Sports Park Spruce Groove)</h1>
+
+
+
+                    <div id="container-fluid">
+
+                      <div class="gallery">
+
+                          <div class="row">
+
+                              <div class="col-lg-12">
+
+                                  
+
+                              <ul id="myContent"> 
+
+
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton1.jpg"><img src="assets/img/edmonton/matsgary_edmonton1.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton2.jpg"><img src="assets/img/edmonton/matsgary_edmonton2.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton3.jpg"><img src="assets/img/edmonton/matsgary_edmonton3.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton4.jpg"><img src="assets/img/edmonton/matsgary_edmonton4.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton5.jpg"><img src="assets/img/edmonton/matsgary_edmonton5.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton6.jpg"><img src="assets/img/edmonton/matsgary_edmonton6.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton7.jpg"><img src="assets/img/edmonton/matsgary_edmonton7.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton8.jpg"><img src="assets/img/edmonton/matsgary_edmonton8.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton9.jpg"><img src="assets/img/edmonton/matsgary_edmonton9.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton10.jpg"><img src="assets/img/edmonton/matsgary_edmonton10.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton12.jpg"><img src="assets/img/edmonton/matsgary_edmonton12.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton13.jpg"><img src="assets/img/edmonton/matsgary_edmonton13.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+                                <li><a class="thumbnail swipebox" href="assets/img/edmonton/matsgary_edmonton14.jpg"><img src="assets/img/edmonton/matsgary_edmonton14.jpg" class="img-responsive" alt="matsgary edmonton" /></a></li>
+
+
+
+                              </ul> 
+
+
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="row">
+
+                <div class="col-lg-12">
+
+
+
+                  <h1 style="padding-top:6%;">Matsgarys fun Training moments</h1>
+
+
+
+                  <div id="container-fluid">
+
+                    <div class="gallery">
+
+                        <div class="row">
+
+                            <div class="col-lg-12">
+
+                                
+
+                            <ul id="myContent"> 
+
+
+
+                              <li><a class="thumbnail swipebox" href="assets/img/2new.jpg"><img src="assets/img/2new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/3new.jpg"><img src="assets/img/3new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/1g.jpg"><img src="assets/img/1g.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/4new.jpg"><img src="assets/img/4new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/5new.jpg"><img src="assets/img/5new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/4g_.jpg"><img src="assets/img/4g_.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/5g_.jpg"><img src="assets/img/5g_.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/6new.jpg"><img src="assets/img/6new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/11new.jpg"><img src="assets/img/11new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/7new.jpg"><img src="assets/img/7new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+
+
+                              <li><a class="thumbnail swipebox" href="assets/img/8g.jpg"><img src="assets/img/8g.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/9new.jpg"><img src="assets/img/9new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/10new.jpg"><img src="assets/img/10new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/11new.jpg"><img src="assets/img/11new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/4g.jpg"><img src="assets/img/4g.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+
+
+
+
+                              <li><a class="thumbnail swipebox" href="assets/img/6g_.jpg"><img src="assets/img/6g_.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/7g_.jpg"><img src="assets/img/7g_.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+                              <li><a class="thumbnail swipebox" href="assets/img/8new.jpg"><img src="assets/img/8new.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+
+
+                              <li><a class="thumbnail swipebox" href="assets/img/5g.jpg"><img src="assets/img/5g.jpg" class="img-responsive" alt="matsgary players" /></a></li>
+
+
+
+                            </ul> 
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+
+
+              </div>
+
+          </div>
+
+      </div>
+
+
+
+      <div class="coaches container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+              <h1 class="page-header"></h1>
+
+              <h1>COACHES ADVICE</h1>
+
+            </div>
+
+
+
+
+
+            <div class="col-sm-12 col-md-12" style="padding : 0px 0px;">
+
+              <div class="thumbnail" style="background: transparent;padding : 0px 0px;">
+
+                <div class="tabsdemoDynamicHeight" ng-cloak="">
+
+                  <md-content>
+
+                    <md-tabs md-dynamic-height="" md-border-bottom="">
+
+                      <md-tab label="Words of advice">
+
+                        <md-content class="md-padding">
+
+                          <h2 style="font-size:16px;" class="md-display-2">Coach Tony says : </h2>
+
+                          <p style="font-size:14px;font-style: italic;">"Since 1990 we've been focusing on the one thing we do best, Play to Win, Loose to Learn and never regret your failures but learn from it. The best lesson we get are from our failures."</p>
+
+                        </md-content>
+
+
+
+                        <md-content class="md-padding">
+
+                          <h2 style="font-size:16px;" class="md-display-2">Trainer Zoi says: </h2>
+
+                          <p style="font-size:14px;font-style: italic;">"It's not how you shoot for the goal, its about the struggle before you shoot for the goal."</p>
+
+                        </md-content>
+
+
+
+
+
+                      </md-tab>
+
+                    </md-tabs>
+
+                  </md-content>
+
+                </div>
+
+              </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+    
+
+    </section>
+
+
+
+    <!-- footer start -->
+
+    <%- include partials/footer.ejs %>
+
+    <!-- footer end -->
+
+
+
+      <!-- Return to Top -->
+
+    <a href="javascript:" id="return-to-top" style="background:#FF4500;"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+
+    (function($) {
+
+        var $window = $(window),
+
+            $html = $('html');
+
+
+
+        function resize() {
+
+            if ($window.width() > 767) {
+
+                // return $html.addClass('mobile');
+
+                $("li").addClass("dropdown");
+
+                // $("#navcol-1").removeClass("navbar-collapse");
+
+            } else {
+
+              // $html.removeClass('dropdown');
+
+              
+
+              $("li").removeClass("dropdown");
+
+              // $("#navcol-1").addClass("navbar-collapse");
+
+              // $("#navbar-collapse-1").removeClass("collapse");
+
+            }
+
+
+
+            
+
+        }
+
+
+
+        $window
+
+            .resize(resize)
+
+            .trigger('resize');
+
+    })(jQuery);
+
+
+
+
+
+      // ===== Scroll to Top ==== 
+
+    $(window).scroll(function() {
+
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+
+    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+
+    } else {
+
+    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+
+    }
+
+    // $('.banner').css("display", "none");
+
+    });
+
+    $('#return-to-top').click(function() {      // When arrow is clicked
+
+    $('body,html').animate({
+
+    scrollTop : 0                       // Scroll to top of body
+
+    }, 500);
+
+    });
+
+  </script>
+
+  <script src="assets/bootstrap/js/jquery.magnific-popup.js"></script>
+
+  <script type="text/javascript">
+
+      $(document).ready(function() {
+
+          $('.gallery').each(function() { // the containers for all your galleries
+
+              $(this).magnificPopup({
+
+                  delegate: 'a', // the selector for gallery item
+
+                  type: 'image',
+
+                  gallery: {
+
+                    enabled:true
+
+                  }
+
+              });
+
+          });
+
+
+
+          // Initialize popup as usual
+
+          $('.popup-link').magnificPopup({
+
+            // Delay in milliseconds before popup is removed
+
+            removalDelay: 300,
+
+
+
+            // Class that is added to popup wrapper and background
+
+            // make it unique to apply your CSS animations just to this exact popup
+
+            mainClass: 'mfp-fade'
+
+          });
+
+
+
+      });
+
+
+
+  </script>
+
+
+
+</body>
+
+
+
+</html>

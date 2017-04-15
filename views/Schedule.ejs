@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matsgary - Schedule</title>
+
+    <!-- <link rel="shortcut icon" href="assets/img/xicon.jpg" type="image/x-icon">
+ -->
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+
+
+
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+
+
+
+    <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
+
+
+
+    <script src="app_calendar.js"></script>
+
+
+
+    
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+
+    <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
+    
+
+    
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+     
+
+    
+
+
+
+    
+
+</head>
+
+
+
+<body style="padding: 0px 0px;">
+
+
+
+  <div id="main" style="width:100%; margin:0 auto;padding-right:0px;"> <!-- untill bottom -->
+
+
+
+  <%- include partials/nav.ejs %>
+  <%- include partials/modals.ejs %>
+
+
+
+
+
+
+
+  
+
+  <section style="color:#000;margin-top: 110px;">
+
+
+
+
+    <div class="row calendar-heading" style="width:50%; margin:0 auto; padding-top:80px;margin-bottom: 40px;">
+
+      <h1>SCHEDULE</h1>
+
+
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-md-6 calendar_container" ng-app='calendarApp'>
+
+        <div ng-controller='MyController'>
+
+          <div class='calendar' ui-calendar='calOptions' ng-model='eventSources' style="margin: 0 auto;">
+            
+          </div>
+
+          <hr>
+
+        </div>
+
+      </div>
+
+      <div class="schedules col-md-6">
+
+        <div class="col-sm-3 days" style="background:#E0AA8F;">
+
+          <h1>Wednesday: </h1>
+
+          <h3>U-4 to U-8 from 5:00 pm to 6:00 pm</h3>
+
+          <h3>U-10 to U-12 from 6:00 pm to 7:00 pm</h3>
+
+        </div>
+
+        <div class="col-sm-3 days" style="background:#B9B896;">
+
+          <h1>Thursday: </h1>
+
+          <h3>U-14 to U-16 from 5:00 pm to 6:00 pm</h3>
+
+          <h3>U-18 from 6:00 to 7:00 pm</h3>
+
+        </div>
+
+        <div class="col-sm-3 days" style="background:#BFE4DB;">
+
+          <h1>Friday: </h1>
+
+          <h3>U-4 to U-8 from 5:00 pm to 6:00 pm</h3>
+
+          <h3>U-10 to U-12 from 6:00 pm to 7:00 pm</h3>
+
+        </div>
+
+        <div class="col-sm-3 days" style="background:#A093B4;">
+
+          <h1>Saturday: </h1>
+
+          <h3>There will be no more Saturday Schedules</h3>
+
+          <!-- <h3>U-4 to U-8 from 5:00 pm to 6:00 pm</h3>
+
+          <h3>U-10 to U-12 from 6:00 pm to 7:00 pm</h3>
+
+          <h3>U-14 to U-18 from 6:30 pm to 7:30 pm</h3> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+    
+
+    <!-- carousel start -->
+
+    <%- include partials/footer.ejs %>   
+
+    <!-- carousel end -->
+
+
+
+
+
+  <a href="javascript:" id="return-to-top" style="background:#FF4500;"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+  </a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+(function($) {
+
+    var $window = $(window),
+
+        $html = $('html');
+
+
+
+    function resize() {
+
+        if ($window.width() > 767) {
+
+            // return $html.addClass('mobile');
+
+            $("li").addClass("dropdown");
+
+            $("#navbar-collapse-1").removeClass("collapse");
+
+        } else {
+
+          // $html.removeClass('dropdown');
+
+          
+
+          $("li").removeClass("dropdown");
+
+          $("#navbar-collapse-1").addClass("collapse");
+
+          // $("#navbar-collapse-1").removeClass("collapse");
+
+        }
+
+
+
+        
+
+    }
+
+
+
+    $window
+
+        .resize(resize)
+
+        .trigger('resize');
+
+})(jQuery);
+
+
+
+
+
+  // $(document).ready(function(){
+
+
+
+  // }
+
+  // ===== Scroll to Top ==== 
+
+  $(window).scroll(function() {
+
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+
+  $('#return-to-top').fadeIn(200);    // Fade in the arrow
+
+  } else {
+
+  $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+
+  }
+
+  // $('.banner').css("display", "none");
+
+  });
+
+  $('#return-to-top').click(function() {      // When arrow is clicked
+
+  $('body,html').animate({
+
+  scrollTop : 0                       // Scroll to top of body
+
+  }, 500);
+
+  });
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+</html>

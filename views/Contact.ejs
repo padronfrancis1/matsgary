@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matsgary - Contact</title>
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+    <link rel="stylesheet" href="assets/angular-material/angular-material.min.css">
+
+    <script src="assets/angular/angular.min.js"></script>
+
+    <script src="assets/angular-animate/angular-animate.js"></script>
+
+    <script src="assets/angular-aria/angular-aria.min.js"></script>
+
+    <script src="assets/angular-material/angular-material.min.js"></script>
+
+    <script>
+
+      angular.module('MyApp',['ngMaterial'])
+
+        .run(function(){
+
+          console.log('My App is ready');
+
+        })
+
+    </script>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
+    
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+ 
+
+
+
+    
+
+</head>
+
+
+
+<body ng-app="MyApp" style="padding: 0px 0px;">
+
+
+
+<div id="main" style="width:100%; margin:0 auto;padding-right:0px;"> <!-- untill bottom -->
+
+
+
+
+
+
+
+  <%- include partials/nav.ejs %>
+  <%- include partials/modals.ejs %>
+
+
+
+  <section style="margin-top: 100px;">
+
+
+
+
+
+
+    <div class="coaches">
+
+      <div class="row" style="width:40%; margin:0 auto; padding-top:80px;">
+
+
+
+
+
+
+
+          <div class="col-sm-12 col-md-12">
+
+            <div class="thumbnail">
+
+
+
+              <div class="caption" style="text-align:center;color:#fff;">
+
+                <h3 style="text-align:center;">QUESTIONS OR COMMENTS</h3>
+
+                    <form  action="ContactEmail" method="POST">
+
+                      <input type="hidden" name="action" value="submit" class="test" style="border: 3px solid red;">
+
+
+
+                      <div class="form-group">
+
+                          <label for="name">Name:</label>
+
+                          <input type="text" class="form-control" required title="Please enter your user name." placeholder="Enter your Name" name="name">
+
+                      </div>
+
+
+
+                      <div class="form-group">
+
+                          <label for="email">Email Address: </label>
+
+                          <input type="email" class="form-control" name="email" placeholder="name@email.com" required>
+
+                      </div>
+
+
+
+                      <div class="form-group">
+
+                          <label for="number">Phone Number (format: xxx-xxx-xxxx):</label><br/>
+
+                          <input id="number" name="number" class="form-control" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="phone number" required >
+
+                      </div>
+
+
+
+                      <div class="form-group">
+
+                          <label for="message">Your Message</label><br/>
+
+                          <textarea style="width: 100%;" class="form-control" name="message"></textarea> 
+
+                      </div>
+
+
+
+                      <div class="form-row">
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                      </div>
+
+
+
+                    </form>
+
+              </div>
+
+              <hr>
+
+
+
+            </div>
+
+          </div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <%- include partials/footer.ejs %>   
+
+
+
+
+
+    
+
+  <a href="javascript:" id="return-to-top" style="background:#FF4500;"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+  </a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+(function($) {
+
+    var $window = $(window),
+
+        $html = $('html');
+
+
+
+    function resize() {
+
+        if ($window.width() > 767) {
+
+            // return $html.addClass('mobile');
+
+            $("li").addClass("dropdown");
+
+            $("#navbar-collapse-1").removeClass("collapse");
+
+        } else {
+
+          // $html.removeClass('dropdown');
+
+          
+
+          $("li").removeClass("dropdown");
+
+          $("#navbar-collapse-1").addClass("collapse");
+
+          // $("#navbar-collapse-1").removeClass("collapse");
+
+        }
+
+
+
+        
+
+    }
+
+
+
+    $window
+
+        .resize(resize)
+
+        .trigger('resize');
+
+})(jQuery);
+
+
+
+
+
+  // $(document).ready(function(){
+
+
+
+  // }
+
+  // ===== Scroll to Top ==== 
+
+  $(window).scroll(function() {
+
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+
+  $('#return-to-top').fadeIn(200);    // Fade in the arrow
+
+  } else {
+
+  $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+
+  }
+
+  // $('.banner').css("display", "none");
+
+  });
+
+  $('#return-to-top').click(function() {      // When arrow is clicked
+
+  $('body,html').animate({
+
+  scrollTop : 0                       // Scroll to top of body
+
+  }, 500);
+
+  });
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+</html>
